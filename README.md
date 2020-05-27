@@ -2,15 +2,15 @@
 
 ## License
 
+## How to Use
+
 ## Repository structure
+
+### `.git`
 
 ### `.vscode`
 
 ### `src`
-
-#### `app`
-
-#### `static`
 
 ### `webpack`
 
@@ -31,12 +31,6 @@
 #### Nodist and nvm
 
 ### Webpack
-
-#### `webpack.config.js`
-
-#### `webpack.dev.js`
-
-#### 'webpack.prod.js`
 
 ### Babel
 
@@ -81,9 +75,6 @@ Alias for `build:prod`
 ## TODO
 
 Outlines for tests
-Commit hooks (e.g. lint on commit)
-Cloning/using as a repository template
-Split README and place details in subdirectories
 TOC
-React/JSX?
-TypeScript?
+React/JSX? (Fork)
+TypeScript? (Fork)
