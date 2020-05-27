@@ -9,9 +9,13 @@
   "scripts": {
     "clean": "rimraf dist",
     "purge": "npm run clean && rimraf node_modules",
-    "build": "webpack --config webpack/webpack.prod.js && copyfiles -u 2 src/static/**/* dist",
+    "build": "npm run build:dev",
+    "build:dev": "webpack --config webpack/webpack.dev.js && npm run copyStatic",
+    "build:prod": "webpack --config webpack/webpack.prod.js && npm run copyStatic",
+    "copyStatic": "copyfiles -u 2 src/static/**/* dist",
     "start": "webpack-dev-server --config webpack/webpack.dev.js --open",
-    "lint": "eslint ."
+    "lint": "eslint --ext .js .",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": "author",
   "license": "BSD-2-Clause",

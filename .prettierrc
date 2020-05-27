@@ -1,4 +1,9 @@
 {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "quoteProps": "as-needed",
     "singleQuote": false,
-    "semi": true
+    "semi": true,
+    "trailingComma": "none"
 }

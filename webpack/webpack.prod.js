@@ -6,10 +6,10 @@ const common = require("./webpack.config");
 
 module.exports = merge(common, {
     module: {
-        rules: [],
+        rules: []
     },
     mode: "production",
     optimization: {
-        minimizer: [new TerserJSPlugin()],
-    },
+        minimizer: [new TerserJSPlugin()]
+    }
 });

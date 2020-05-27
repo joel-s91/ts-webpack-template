@@ -9,7 +9,7 @@ module.exports = merge(common, {
     devServer: {
         port: 8080,
         contentBase: "./src/static",
-        hot: true,
+        hot: true
     },
-    plugins: [new webpack.HotModuleReplacementPlugin()],
+    plugins: [new webpack.HotModuleReplacementPlugin()]
 });
