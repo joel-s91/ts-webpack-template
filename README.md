@@ -98,6 +98,9 @@ Alias for [`build:prod`](#buildprod)
 ## TODO
 
 Outlines for tests
+
 TOC
+
 React/JSX? (Fork)
+
 TypeScript? (Fork)
