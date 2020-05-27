@@ -11,6 +11,8 @@
 
 ## License
 
+BSD 2-Clause. See [LICENSE](/LICENSE).
+
 ## How to Use
 
 - Fork this repository or use as a template in Github <TODO: link>
@@ -33,9 +35,13 @@ Contains Webpack build configuration files. See [Webpack](#webpack-1) for an ove
 
 ### `LICENSE` and `README.MD`
 
+`LICENSE` contains the terms under which this code is licensed.
+
+`README.MD` is the file you are currently reading :wink:
+
 ### Git
 
-These files are for configuring Git
+These files are for configuring Git.
 
 #### `.gitignore`
 
@@ -47,7 +53,7 @@ These directories are created during the build and should not be checked in. The
 
 #### `dist`
 
-#### `node_modules` 
+#### `node_modules`
 
 ## Build Pipeline
 
@@ -73,15 +79,15 @@ These directories are created during the build and should not be checked in. The
 
 ### `clean`
 
-Removes the `dist` directory
+Removes the `dist` directory to ensure the next build is run from a clean state.
 
 ### `purge`
 
-Runs clean and also removes `node_modules` (so you will have to run `npm install`) again afterwards
+Runs clean and also removes `node_modules` (so you will have to run `npm install`) again afterwards.
 
 ### `build`
 
-Alias for [`build:prod`](#buildprod)
+Alias for [`build:prod`](#buildprod).
 
 ### `build:dev`
 
