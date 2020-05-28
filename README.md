@@ -1,24 +1,44 @@
 # js-webpack-template
 
-## Table of Contents
-
 - [License](#license)
 - [How to Use](#how-to-use)
 - [Repository Structure](#repository-structure)
+  - [`.vscode`](#vscode)
+  - [`src`](#src)
+  - [`webpack`](#webpack)
+  - [`LICENSE` and `README.MD`](#license-and-readmemd)
+  - [Git Configuration](#git-configuration)
+  - [Build dependencies and artifacts](#build-dependencies-and-artifacts)
 - [Build Pipeline](#build-pipeline)
+  - [NPM](#npm)
+  - [Webpack](#webpack-1)
+  - [Babel](#babel)
 - [Code Styles and Linting](#code-styles-and-linting)
+  - [EditorConfig](#editorconfig)
+  - [Prettier](#prettier)
+  - [ESLint](#eslint)
 - [NPM Scripts](#npm-scripts)
+  - [`clean`](#clean)
+  - [`purge`](#purge)
+  - [`build`](#build)
+  - [`build:dev`](#builddev)
+  - [`build:prod`](#buildprod)
+  - [`copyStatic`](#copystatic)
+  - [`start`](#start)
+  - [`lint`](#lint)
+  - [`lint:fix`](#lintfix)
+- [TODO](#todo)
 
 ## License
 
-BSD 2-Clause. See [LICENSE](/LICENSE).
+BSD 2-Clause. See [LICENSE](/LICENSE) for details.
 
 ## How to Use
 
 - Fork this repository or use as a template in Github <TODO: link>
 - Checkout locally using `git clone`
-- Install Node.js 12.17.0 <TODO: link> or (optionally) install Nodist or nvm <TODO: links>
-- Run `npm install` to get the required dependencies
+- Install Node.js 12.17.0 <TODO: link> or (optionally) [install Nodist or nvm](#nodist-and-nvm)
+- Run `npm install` to pull down the required dependencies
 - Start coding :sunglasses:
 
 ## Repository Structure
@@ -27,7 +47,11 @@ The different directories and their contents are described here. Most of the fil
 
 ### `.vscode`
 
+Contains some preconfigured settings and recommended extensions for getting started using VS Code.
+
 ### `src`
+
+All source code is in here. See [the directory README](/src) for details.
 
 ### `webpack`
 
@@ -39,7 +63,7 @@ Contains Webpack build configuration files. See [Webpack](#webpack-1) for an ove
 
 `README.MD` is the file you are currently reading :wink:
 
-### Git
+### Git Configuration
 
 These files are for configuring Git.
 
@@ -53,13 +77,21 @@ These directories are created during the build and should not be checked in. The
 
 #### `dist`
 
+Build output will be put in here.
+
 #### `node_modules`
 
+NPM dependencies for the build will be downloaded into here when `npm install` is run.
+
 ## Build Pipeline
+
+The build pipeline is pretty typical for a modern JavaScript app. NPM is used for dependency management and defining build scripts. The actual transpiling and bundling is done with Webpack using the Babel loader. This also adds the capability for running a dev server with hot reloading of code. The tools are documented here.
 
 ### NPM
 
 #### Nodist and nvm
+
+I've added optional support for version management of Node.js and NPM using [Nodist](https://github.com/nullivex/nodist) (for Windows) or [nvm](https://github.com/nvm-sh/nvm) (for macOS/Linux). These tools will ensure the required versions of Node.js and NPM are used.
 
 ### Webpack
 
@@ -69,6 +101,8 @@ These directories are created during the build and should not be checked in. The
 
 ## Code Styles and Linting
 
+The following tools are used for enforcing coding styles and linting code in order of precedence:
+
 ### EditorConfig
 
 ### Prettier
@@ -76,6 +110,8 @@ These directories are created during the build and should not be checked in. The
 ### ESLint
 
 ## NPM Scripts
+
+These scripts are predefined in the `package.json` file to get you started. They can be run with `npm run <script> [-- <options>]`
 
 ### `clean`
 
@@ -102,6 +138,8 @@ Alias for [`build:prod`](#buildprod).
 ### `lint:fix`
 
 ## TODO
+
+Fill in empty sections in documentation
 
 Outlines for tests
 
