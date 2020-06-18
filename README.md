@@ -37,7 +37,7 @@ BSD 2-Clause. See [LICENSE](/LICENSE) for details.
 
 - Fork this repository or use as a template in Github <TODO: link>
 - Checkout locally using `git clone`
-- Install Node.js 12.17.0 <TODO: link> or (optionally) [install Nodist or nvm](#nodist-and-nvm)
+- Install [Node.js 12.17.0](https://nodejs.org/) or (optionally) [install Nodist or nvm](#nodist-and-nvm)
 - Run `npm install` to pull down the required dependencies
 - Start coding :sunglasses:
 
@@ -95,19 +95,25 @@ I've added optional support for version management of Node.js and NPM using [Nod
 
 ### Webpack
 
-### Babel
+### [Babel](https://babeljs.io/)
 
-#### `babel-preset-env` and Browserslist
+#### `babel-preset-env` and [Browserslist](https://github.com/browserslist/browserslist)
 
 ## Code Styles and Linting
 
 The following tools are used for enforcing coding styles and linting code in order of precedence:
 
-### EditorConfig
+### [EditorConfig](https://editorconfig.org/)
 
-### Prettier
+General text editor settings. Configured in `.editorconfig`.
 
-### ESLint
+### [Prettier](https://prettier.io/)
+
+JavaScript, HTML and CSS specific code styles. Configured in `.prettierrc`.
+
+### [ESLint](https://eslint.org/)
+
+Code [linting](https://stackoverflow.com/a/8503586) for JavaScript. Can find common coding errors and enforces a coding style. Configured to work alongside Prettier. ESLint can also auto-fix many of the issues it finds (see [`npm lint`](#lint) and [`npm lint:fix`](#lintfix) npm scripts). The base configuration is in `.eslintrc` and currently uses the recommended default settings as well as checking the code styles configured through [Prettier](#prettier) (using a plugin).
 
 ## NPM Scripts
 
@@ -127,15 +133,27 @@ Alias for [`build:prod`](#buildprod).
 
 ### `build:dev`
 
+Bundle JavaScript modules in development mode and output to the `/dist` directory. Also puts the static files there by running [`copyStatic`](#copystatic). See [Webpack](#webpack) for more details.
+
 ### `build:prod`
+
+<Desc> Also puts the static files there by running [`copyStatic`](#copystatic). See [Webpack](#webpack) for more details.
 
 ### `copyStatic`
 
+Copy static site files (e.g. html and main css files). Called by `build:dev` and `build:prod`.
+
 ### `start`
+
+Start a webpack dev server to serve the application. See [Webpack](#webpack) for more details.
 
 ### `lint`
 
+Run ESLint and output linting errors. See [ESLint](#eslint) for more details.
+
 ### `lint:fix`
+
+Run ESLint and fix all auto-fixable errors. See [ESLint](#eslint) for more details.
 
 ## TODO
 
