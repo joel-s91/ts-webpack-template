@@ -13,6 +13,8 @@ This template is set up to use [Webpack](https://webpack.js.org/) to build and b
 
 ## Config Files
 
+Webpack is configured by scripts that will be run in Node during the build/ Details on the individual configurations are commented in the files.
+
 ### `webpack.config.js`
 
 Contains all the configuration that should be the same for dev and prod builds. This includes the app entry point, bundle output details, and module loader and bundler settings. These settings are merged with the dev and prod build configurations using `webpack-merge`.
@@ -27,4 +29,4 @@ Contains the configuration specific to prod builds. Currently this is just using
 
 ## ESLint Configuration
 
-TODO...
+Configures ESLint for Node scripts. (For more details on ESLint see [the top level README](../README.md#eslint))
