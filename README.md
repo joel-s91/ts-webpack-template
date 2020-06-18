@@ -67,9 +67,13 @@ Contains Webpack build configuration files. See [Webpack](#webpack-1) for an ove
 
 These files are for configuring Git.
 
-#### `.gitignore`
+#### [`.gitignore`](https://git-scm.com/docs/gitignore)
 
-#### `.gitattributes`
+Configures files that should never be tracked by Git, e.g. OS specific files, dependencies, build artifacts, (some) IDE configuration, etc.
+
+#### [`.gitattributes`](https://git-scm.com/docs/gitattributes)
+
+Configures file attributes for Git, e.g. how files should be handled or how file line endings should be normalized.
 
 ### Build dependencies and artifacts
 
@@ -89,11 +93,19 @@ The build pipeline is pretty typical for a modern JavaScript app. NPM is used fo
 
 ### NPM
 
+NPM is used for dependency management and running build scripts.
+
+Note: dependencies are maintained as follows
+- If the package should be bundled with the app it should be in `dependencies`, i.e. installed with `npm install <package>`
+- If the package is used for building the app or assisting with development it should be in `devDependencies`, i.e. installed with `npm install --save-dev <package>`
+
 #### Nodist and nvm
 
 I've added optional support for version management of Node.js and NPM using [Nodist](https://github.com/nullivex/nodist) (for Windows) or [nvm](https://github.com/nvm-sh/nvm) (for macOS/Linux). These tools will ensure the required versions of Node.js and NPM are used.
 
 ### Webpack
+
+Webpack is used, along with a range of plugins and loaders, to bundle the app. See [the Webpack README](webpack/README.MD) for more details.
 
 ### [Babel](https://babeljs.io/)
 

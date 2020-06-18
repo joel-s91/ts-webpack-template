@@ -17,4 +17,4 @@ Contains static files that should just be copied to the build output directory a
 
 ## ESLint Configuration
 
-TODO...
+Configures ESLint for browser scripts. (For more details on ESLint see [the top level README](../README.md#eslint))
