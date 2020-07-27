@@ -169,10 +169,6 @@ Run ESLint and fix all auto-fixable errors. See [ESLint](#eslint) for more detai
 
 ## TODO
 
-Fill in empty sections in documentation
-
-Outlines for tests
-
-React/JSX? (Fork)
-
-TypeScript? (Fork)
+- Babel documentation
+- TypeScript fork
+- React/JSX fork
