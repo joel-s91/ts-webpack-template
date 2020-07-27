@@ -5,9 +5,11 @@
         "prettier"
     ],
     "rules": {
+        "jest/no-disabled-tests": "warn",
         "prettier/prettier": "error"
     },
     "plugins": [
-        "prettier"
+        "prettier",
+        "jest"
     ]
 }
