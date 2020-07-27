@@ -10,7 +10,8 @@ module.exports = merge(common, {
     mode: "development",
 
     // Generate source maps for easier debugging (the browser console will show the original filename and line number)
-    devtool: "source-map",
+    // https://webpack.js.org/configuration/devtool/
+    devtool: "inline-source-map",
 
     // Configure a development server with hot reloading. This will watch the files included in the bundle, rebuild the
     // bundle when they're modified, and trigger a refresh of the page in the browser.

@@ -10,6 +10,10 @@ module.exports = merge(common, {
     // More info here: https://webpack.js.org/configuration/mode/#usage
     mode: "production",
 
+    // Generate source maps for easier debugging (the browser console will show the original filename and line number)
+    // https://webpack.js.org/configuration/devtool/
+    devtool: "source-map",
+
     // Optimization for the production bundle
     optimization: {
         // Use TerserJS to minify and obfuscate the production code.
