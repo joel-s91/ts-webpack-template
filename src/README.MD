@@ -4,6 +4,7 @@
   - [`app`](#app)
   - [`static`](#static)
 - [ESLint Configuration](#eslint-configuration)
+- [TypeScript Configuration](#typescript-configuration)
 
 ## Directories
 
@@ -18,3 +19,7 @@ Contains static files that should just be copied to the build output directory a
 ## ESLint Configuration
 
 Configures ESLint for browser scripts. (For more details on ESLint see [the top level README](../README.md#eslint))
+
+## TypeScript Configuration
+
+TODO

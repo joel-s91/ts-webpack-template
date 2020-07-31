@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "module": "ES6",
+        "noImplicitAny": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strict": true
+    },
+    "exclude": ["test"]
+}

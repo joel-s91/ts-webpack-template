@@ -23,10 +23,13 @@ module.exports = {
             // Use babel-loader to process JavaScript files (except for those in node_modules - assuming they've
             // already been processed by Babel).
             {
-                test: /\.js$/,
+                test: /\.[jt]s$/,
                 exclude: /node_modules/,
-                use: ["babel-loader"]
+                use: ["babel-loader", "ts-loader"]
             }
         ]
+    },
+    resolve: {
+        extensions: [".ts", ".js"]
     }
 };

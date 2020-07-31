@@ -1,4 +1,4 @@
-# js-webpack-template
+# ts-webpack-template
 
 - [License](#license)
 - [How to Use](#how-to-use)
@@ -27,7 +27,7 @@
   - [`start`](#start)
   - [`lint`](#lint)
   - [`lint:fix`](#lintfix)
-- [TODO](#todo)
+  - [TODO](#todo)
 
 ## License
 
@@ -167,8 +167,6 @@ Run ESLint and output linting errors. See [ESLint](#eslint) for more details.
 
 Run ESLint and fix all auto-fixable errors. See [ESLint](#eslint) for more details.
 
-## TODO
+### TODO
 
-- Babel documentation
-- TypeScript fork
-- React/JSX fork
+- Update docs for TypeScript
