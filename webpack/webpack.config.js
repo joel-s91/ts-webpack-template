@@ -7,7 +7,7 @@ module.exports = {
     // performance (currently this isn't happening but I may later add it to the prod config as an example).
     // NOTE: It is possible to specify multiple entry points to generate multiple bundles (e.g. for a multi-page app).
     // See https://webpack.js.org/concepts/entry-points/#object-syntax for details
-    entry: "./src/app/index.js",
+    entry: "./src/app/index.ts",
 
     // Where to place the output bundle
     output: {

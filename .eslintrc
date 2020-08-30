@@ -1,15 +1,12 @@
 {
     "root": true,
     "extends": [
-        "eslint:recommended",
-        "prettier"
+        "eslint:recommended"
     ],
     "rules": {
-        "jest/no-disabled-tests": "warn",
-        "prettier/prettier": "error"
+        "jest/no-disabled-tests": "warn"
     },
     "plugins": [
-        "prettier",
         "jest"
     ]
 }
