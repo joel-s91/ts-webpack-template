@@ -15,7 +15,7 @@
     "copyStatic": "copyfiles -u 2 src/static/**/* dist",
     "start": "webpack-dev-server --config webpack/webpack.dev.js --open",
     "test": "jest",
-    "lint": "eslint --ext .js .",
+    "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix"
   },
   "author": "author",
