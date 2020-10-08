@@ -4,9 +4,6 @@
         "eslint:recommended"
     ],
     "rules": {
-        "jest/no-disabled-tests": "warn"
-    },
-    "plugins": [
-        "jest"
-    ]
+        "quotes": ["error", "double"]
+    }
 }

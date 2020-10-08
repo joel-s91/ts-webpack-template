@@ -1,0 +1,8 @@
+{
+    "plugins": [
+        "jest"
+    ],
+    "rules": {
+        "jest/no-disabled-tests": "warn"
+    }
+}

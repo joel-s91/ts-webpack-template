@@ -3,7 +3,8 @@
         80,
         120
     ],
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
     "markdown.extension.toc.levels": "2..3",
-    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true
+    "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true
 }
